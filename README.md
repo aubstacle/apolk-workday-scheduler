@@ -8,13 +8,13 @@ From there I found a way to save the user input to local storage, and then go ba
 
 ## Screenshots
 
-![Opening-Page](./assets/Screenshot1)
+![Opening-Page](https://github.com/aubstacle/apolk-workday-scheduler/blob/master/assets/Screenshot1)
 
-![After-entering-text](./assets/Screenshot2)
+![After-entering-text](https://github.com/aubstacle/apolk-workday-scheduler/blob/master/assets/Screenshot2)
 
-![After-refreshing](./assets/Screenshot3)
+![After-refreshing](https://github.com/aubstacle/apolk-workday-scheduler/blob/master/assets/Screenshot3)
 
-![Hover-button-fix](./assets/Screenshot4)
+![Hover-button-fix](https://github.com/aubstacle/apolk-workday-scheduler/blob/master/assets/Screenshot4)
 
 ## Usage
 
