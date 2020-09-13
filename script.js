@@ -2,6 +2,7 @@
 $(document).ready(function () {
   var dayEl = $("#currentDay");
   var timeEl = $("#currentTime");
+  var calendar = $(".container");
 
   //Show today's date and live time in the header using moment
   var currentDate = moment().format("dddd MMMM Do");
@@ -20,18 +21,27 @@ $(document).ready(function () {
   for (var i = 0; i < timeList.length; i++) {
     //create new rows to hold hour, text input and save button columns
     var addRow = $("<div class='row'>");
-    var hourBox = $("<div class='col-sm-1 hour time-block'>").text(timeList[i] + ":00");
+
+    var hourBox = $("<div class='col-sm-1 hour time-block'>").text(
+      timeList[i] + ":00"
+    );
+
     var textInput = $("<textarea class='col-sm-10 description'>").attr(
       "placeholder",
-      "Enter description"
+      "Enter event description here..."
     );
-    var saveButton = $("<button class='col-sm-1 saveBtn'>").text("Save!");
-    // adding this id to the button and text input is necessary for when we want to save the corresponding time of each text input in local storage
+
+    var saveButton = $("<button class='col-sm-1 saveBtn'>").append(
+      "<i class='far fa-save' style='font-size:44px'>"
+    );
+
+    // adding this id to button & text input variables is necessary when we want to save the text input and time in local storage
     textInput.attr("save-time", timeList[i]);
     saveButton.attr("save-time", timeList[i]);
 
+    // append the columns to the new row & append new row to calendar container
     addRow.append(hourBox, textInput, saveButton);
-    $(".container").append(addRow);
+    calendar.append(addRow);
 
     // save your text input and corresponding time to local storage by clicking the save button
     // setItem locally stores the provided key (save-time) and value (description)
