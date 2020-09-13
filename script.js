@@ -10,11 +10,12 @@ var timeArray = [
   "2am",
   "3am",
 ];
-//DOM elements
+
+// corresponding elements for the date and time in header
 var dayEl = $("#currentDay");
 var timeEl = $("#currentTime");
 
-//Show today's date using moment
+//Show today's date in the header using moment
 var currentDate = m.format("dddd MMMM Do");
 dayEl.text("Today is " + currentDate);
 currentTime = m.format("LTS");
@@ -26,3 +27,12 @@ setInterval(function () {
   var clock = m.format("h:mm:ss A");
   timeEl.text(clock);
 }, 1000);
+
+
+// Dynamically create the new time blocks for each hour
+for (var i = 0; i < timeArray.length; i++); {
+    var createdRow = $("<div class='row time-block'>");
+    var hour = $("<div class='col-sm-1 hour'>");
+    var descriptionInput = $("<textarea class='col-sm-10 description'>");
+    
+}
