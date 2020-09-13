@@ -4,13 +4,17 @@
 
 Welcome to my dynamically updated Work Day Schedule application powered by jQuery. This is my first time utilizing a 3rd party API in the form of **moment.js**. This app was challenging to build but I figured out a way to dynamically update the HTML via jQuery with rows containing time of normal business hours (9am-5pn), a user text input field and a save button. I also used the **moment.js** library to populate the current date and current time in the header; the time is live updated by the second, just like a digital clock!!
 
-From there I found a way to save the user input to local storage, and then go back through the array to check for previously stored local data. If any data is present in local storage, the getItem method pushes the saved data back into the text input field. This way the data stays on the page, even after refreshing.
-
-Huge shoutout to my classmate Jude Clark, who looked at my code with me and helped get my loop to correctly populate all the rows into the html container!! I was stuck in a spot where I was only getting the first row to appear, and with her help I was able to fix the problem and loop through the entire array seamlessly. She also reminded me to wrap everything in the $(document).ready() function in an effort to ensure the DOM is fully ready to receive my JS code. Thanks Jude!!
-
+From there I found a way to save the user input to local storage, and then go back through the array to check for previously stored local data. If any data is present in local storage, the getItem method appends saved data to the the text input field again after refreshing the page. Huge shoutout to my classmate Jude Clark for helping me get my loop to function correctly!! 
 
 ## Screenshots
 
+![Opening-Page](./assets/Screenshot1)
+
+![After-entering-text](./assets/Screenshot2)
+
+![After-refreshing](./assets/Screenshot3)
+
+![Hover-button-fix](./assets/Screenshot4)
 
 ## Usage
 
