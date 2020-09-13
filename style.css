@@ -65,7 +65,9 @@ textarea {
   color: white;
 }
 
-.saveBtn i:hover {
+/* slightly changed this to make hover feature work and brighten the blue color slightly */
+.saveBtn:hover {
   font-size: 20px;
+  filter: brightness(150%);
   transition: all 0.3s ease-in-out;
 }
