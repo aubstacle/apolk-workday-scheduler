@@ -1,14 +1,14 @@
 //Create an array of all the time slots in your work day
 var timeArray = [
-  "7pm",
-  "8pm",
-  "9pm",
-  "10pm",
-  "11pm",
-  "12am",
-  "1am",
-  "2am",
-  "3am",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12",
+  "1",
+  "2",
+  "3",
 ];
 
 // corresponding elements for the date and time in header
@@ -31,8 +31,18 @@ setInterval(function () {
 
 // Dynamically create the new time blocks for each hour
 for (var i = 0; i < timeArray.length; i++); {
-    var createdRow = $("<div class='row time-block'>");
-    var hour = $("<div class='col-sm-1 hour'>");
-    var descriptionInput = $("<textarea class='col-sm-10 description'>");
+    // declare new row with hour, text input and save button columns
+    var createRow = $("<div class='row'>");
+    var hour = $("<div class='col-sm-1'>");
+    var scheduleInput = $("<textarea class='col-sm-10'>");
+    var save = $("<button class='col-sm-1 saveBtn'>");
+    var calContainer = $(".calContainer");
+
+    scheduleInput.attr("hour", timeArray[i]);
+    scheduleInput.attr("placeholder", "Enter your plans here");
+
+    createRow.append(hour, scheduleInput, save);
+    calContainer.append(createRow);
+
     
 }
