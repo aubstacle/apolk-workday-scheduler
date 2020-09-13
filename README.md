@@ -8,12 +8,16 @@ From there I found a way to save the user input to local storage, and then go ba
 
 ## Screenshots
 
+### Opening Page
 ![Opening Page](./assets/Screenshot1.png)
 
+### After Entering and Saving Descriptions
 ![After-entering-text](./assets/Screenshot2.png)
 
+### After Refreshing Page
 ![After-refreshing](./assets/Screenshot3.png)
 
+### Hover Button Fix & Styling
 ![Hover-button-fix](./assets/Screenshot4.png)
 
 ## Usage
