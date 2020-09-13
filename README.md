@@ -16,6 +16,8 @@ From there I found a way to save the user input to local storage, and then go ba
 
 ![Hover-button-fix](https://github.com/aubstacle/apolk-workday-scheduler/blob/master/assets/Screenshot4)
 
+![opening-page](./assets/Screenshot1.png)
+
 ## Usage
 
 deployed application: https://aubstacle.github.io/apolk-workday-scheduler/
